@@ -8,105 +8,150 @@
 </head>
 <body>
     <header>
-        <h1>João Antônio Moura Sousa</h1>
-        <nav>
-            <a href="#sobre">Sobre mim</a> |
-            <a href="#projetos">Projetos</a> |
-            <a href="#habilidades">Habilidades</a> |
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="header-container">
+            <h1>João Antônio Moura Sousa</h1>
+            <nav>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="sobre" class="principal">
-        <img src="img/foto-joao.jpg" alt="Foto de João Antônio" class="foto-perfil">
-        <article class="apresentacao">
-            <h2>Sobre mim</h2>
-            <p class="destaque">Olá! Sou <b>João Antônio Moura Sousa</b>, estudante do <b>IFCE campus Maranguape</b> no curso <b>Técnico em Informática</b>.</p>
-            <p class="destaque">Sou apaixonado por tecnologia e esportes. Já pratiquei futebol, basquete e diversas artes marciais. Meu objetivo é me tornar um <b>Engenheiro de Software</b> ou apenas rico mesmo ;) </p>
+    <main>
+        <section id="sobre" class="sobre-mim">
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <h2>Sobre mim</h2>
+                    <p class="destaque">Olá! Sou <b>João Antônio Moura Sousa</b>, estudante do <b>IFCE campus Maranguape</b> no curso <b>Técnico em Informática</b>.</p>
+                    <p class="destaque">Já pratiquei futebol, basquete e diversas artes marciais. Meu objetivo é me tornar um <b>Engenheiro de Software</b> ou apenas rico mesmo ;)</p>
+
+                    <div class="info-destaque">
+                        <h3>Interesses</h3>
+                        <ul>
+                            <li>Futebol e Basquete</li>
+                            <li>Artes Marciais</li>
+                            <li>Desenvolvimento Web</li>
+                            <li>Tecnologia e Inovação</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sobre-imagem">
+                    <figure>
+                        <img src="img/foto-joao.jpg" alt="Foto de João Antônio" class="foto-perfil">
+                        <figcaption>João Antônio</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-container">
+                <div class="projeto-item">
+                    <h3>Site Pessoal - Prof. Ademir</h3>
+                    <p>Landing page desenvolvida para um servidor do IFCE.</p>
+                    <a href="https://github.com/SrKkxz/Ademir-landing" target="_blank" class="botao-link">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto-item">
+                    <h3>Exercícios de POO</h3>
+                    <p>Exercícios de Programação Orientada a Objetos em Java.</p>
+                    <a href="https://github.com/SrKkxz/POO-2025.2-TIP4" target="_blank" class="botao-link">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto-item">
+                    <h3>Projetos Aleatórios</h3>
+                    <p>Coleção de projetos diversos em programação.</p>
+                    <a href="https://github.com/SrKkxz/random-projects" target="_blank" class="botao-link">Ver no GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="habilidades">
+            <h2>Habilidades</h2>
             
-            <div class="info-destaque">
-                <h3>Interesses</h3>
-                <ul>
-                    <li>Futebol e Basquete</li>
-                    <li>Artes Marciais</li>
-                    <li>Desenvolvimento Web</li>
-                    <li>Tecnologia e Inovação</li>
-                </ul>
+            <table class="tabela-habilidades">
+                <thead>
+                    <tr>
+                        <th>Tecnologia</th>
+                        <th>Nível de Conhecimento</th>
+                        <th>Tempo de Experiência</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediário</td>
+                        <td>6 meses</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediário</td>
+                        <td>6 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Básico</td>
+                        <td>6 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Básico</td>
+                        <td>6 meses</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cursos-medalhas">
+                <div class="cursos">
+                    <h3>Cursos Realizados</h3>
+                    <ul>
+                        <li>Inglês Intermediário - 6 meses</li>
+                        <li>Inglês Avançado - 1 ano</li>
+                        <li>Suporte e Manutenção de Computadores - 6 meses</li>
+                        <li>Primeiros Socorros (Enfermagem Básica) - 6 meses</li>
+                        <li>Contabilidade Básica - 6 meses</li>
+                        <li>Informática Básica - 1 ano</li>
+                        <li>Eletrotécnica Básica - 1 ano</li>
+                    </ul>
+                </div>
+
+                <div class="medalhas">
+                    <h3>Medalhas e Conquistas</h3>
+                    <ul>
+                        <li>OBA - Bronze (2020)</li>
+                        <li>OBMEP Nível 1 - Bronze (2021)</li>
+                        <li>OBA - Prata (2022)</li>
+                        <li>MOBFOG - Prata (2022)</li>
+                        <li>OBMEP Nível 2 - Ouro (2023)</li>
+                        <li>ONC - Bronze (2023)</li>
+                        <li>CBLLE - Melhor Finalizador Infantil - (2019)</li>
+                    </ul>
+                </div>
             </div>
-        </article>
-    </section>
+        </section>
 
-    <section id="projetos" class="card">
-        <h2>Projetos</h2>
-        <div class="projetos-lista">
-            <div class="projeto-item">
-                <h3>Site Pessoal - Prof. Ademir</h3>
-                <p>Landing page desenvolvida para um servidor do IFCE.</p>
-                <a href="https://github.com/SrKkxz/Ademir-landing" target="_blank" class="botao-link">Ver no GitHub</a>
-            </div>
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
 
-            <div class="projeto-item">
-                <h3>Exercícios de POO</h3>
-                <p>Exercícios de Programação Orientada a Objetos em Java.</p>
-                <a href="https://github.com/SrKkxz/POO-2025.2-TIP4" target="_blank" class="botao-link">Ver no GitHub</a>
-            </div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
 
-            <div class="projeto-item">
-                <h3>Projetos Aleatórios</h3>
-                <p>Coleção de projetos diversos em programação.</p>
-                <a href="https://github.com/SrKkxz/random-projects" target="_blank" class="botao-link">Ver no GitHub</a>
-            </div>
-        </div>
-    </section>
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" required>
 
-    <section id="habilidades" class="card">
-        <h2>Habilidades</h2>
-        
-        <div class="cursos">
-            <h3>Cursos Realizados</h3>
-            <ul>
-                <li>Inglês Intermediário - 6 meses</li>
-                <li>Inglês Avançado - 1 ano</li>
-                <li>Suporte e Manutenção de Computadores - 6 meses</li>
-                <li>Primeiros Socorros (Enfermagem Básica) - 6 meses</li>
-                <li>Contabilidade Básica - 6 meses</li>
-                <li>Informática Básica - 1 ano</li>
-                <li>Eletrotécnica Básica - 1 ano</li>
-            </ul>
-        </div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" required></textarea>
 
-        <div class="medalhas">
-            <h3>Medalhas e Conquistas</h3>
-            <ul>
-                <li>OBA - Bronze (2020)</li>
-                <li>OBMEP Nível 1 - Bronze (2021)</li>
-                <li>OBA - Prata (2022)</li>
-                <li>MOBFOG - Prata (2022)</li>
-                <li>OBMEP Nível 2 - Ouro (2023)</li>
-                <li>ONC - Bronze (2023)</li>
-                <li>Melhor Finalizador Infantil - CBLLE (2019)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contato" class="card">
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required>
-
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" rows="5" required></textarea>
-
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>© 2025 João Antônio Moura Sousa</p>
