@@ -3,68 +3,77 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #02010a;
     color: #ffffff;
     line-height: 1.6;
 }
 
 /* ----- CABEÇALHO ----- */
 header {
-    background-color: #8A2BE2;
+    background-color: #02010a;
     color: white;
-    text-align: center;
     padding: 20px 0;
-    border-bottom: 4px solid #6A1BB5;
+    border-bottom: 2px solid #8900f2;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 nav {
-    margin-top: 15px;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 10px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #8900f2;
 }
 
-/* ----- SEÇÃO PRINCIPAL ----- */
-.principal {
-    width: 85%;
+/* ----- SEÇÃO SOBRE MIM ----- */
+.sobre-mim {
+    width: 90%;
     margin: 30px auto;
     background: #1a1a1a;
     padding: 30px;
-    border: 2px solid #8A2BE2;
-    overflow: hidden;
+    border: 2px solid #8900f2;
 }
 
-.foto-perfil {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin-right: 30px;
-    border: 3px solid #8A2BE2;
-    border-radius: 50%;
+.sobre-container {
+    display: flex;
+    gap: 30px;
 }
 
-.apresentacao {
-    overflow: hidden;
+.sobre-texto {
+    flex: 2;
 }
 
-.apresentacao h2 {
-    color: #8A2BE2;
+.sobre-imagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-mim h2 {
+    color: #8900f2;
     font-size: 24px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #6A1BB5;
+    border-bottom: 2px solid #6a00b8;
     padding-bottom: 8px;
 }
 
@@ -76,15 +85,28 @@ nav a:hover {
     text-align: justify;
 }
 
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #8900f2;
+    border-radius: 50%;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    color: #cccccc;
+}
+
 .info-destaque {
     background: #2a2a2a;
     padding: 20px;
     margin: 15px 0;
-    border: 1px solid #8A2BE2;
+    border: 1px solid #8900f2;
 }
 
 .info-destaque h3 {
-    color: #8A2BE2;
+    color: #8900f2;
     margin-top: 0;
     font-size: 18px;
 }
@@ -95,57 +117,46 @@ nav a:hover {
 }
 
 .info-destaque li {
-    padding: 6px 0;
+    padding: 8px 0;
     border-bottom: 1px solid #444444;
-    position: relative;
-    padding-left: 20px;
-}
-
-.info-destaque li:before {
-    content: "▶";
-    color: #8A2BE2;
-    position: absolute;
-    left: 0;
-}
-
-/* ----- CARDS ----- */
-.card {
-    width: 85%;
-    margin: 30px auto;
-    background: #1a1a1a;
-    padding: 30px;
-    border: 2px solid #8A2BE2;
-}
-
-.card h2 {
-    color: #8A2BE2;
-    font-size: 24px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #6A1BB5;
-    padding-bottom: 8px;
-}
-
-.card h3 {
-    color: #8A2BE2;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    color: #cccccc;
 }
 
 /* ----- PROJETOS ----- */
-.projetos-lista {
-    display: block;
+.projetos {
+    width: 90%;
+    margin: 30px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border: 2px solid #8900f2;
+}
+
+.projetos h2 {
+    color: #8900f2;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #6a00b8;
+    padding-bottom: 8px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .projeto-item {
     background-color: #2a2a2a;
-    border: 1px solid #8A2BE2;
-    padding: 15px;
-    margin: 15px 0;
-    text-align: center;
+    border: 1px solid #8900f2;
+    padding: 20px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .projeto-item h3 {
-    color: #8A2BE2;
+    color: #8900f2;
     font-size: 18px;
     margin-bottom: 8px;
 }
@@ -153,32 +164,84 @@ nav a:hover {
 .projeto-item p {
     margin-bottom: 12px;
     color: #cccccc;
+    flex-grow: 1;
 }
 
 .botao-link {
     display: inline-block;
-    background-color: #8A2BE2;
+    background-color: #8900f2;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
+    margin-top: auto;
 }
 
 .botao-link:hover {
-    background-color: #6A1BB5;
+    background-color: #6a00b8;
 }
 
 /* ----- HABILIDADES ----- */
+.habilidades {
+    width: 90%;
+    margin: 30px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border: 2px solid #8900f2;
+}
+
+.habilidades h2 {
+    color: #8900f2;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #6a00b8;
+    padding-bottom: 8px;
+}
+
+.tabela-habilidades {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #2a2a2a;
+}
+
+.tabela-habilidades th,
+.tabela-habilidades td {
+    border: 1px solid #8900f2;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-habilidades th {
+    background-color: #8900f2;
+    color: white;
+    font-weight: bold;
+}
+
+.tabela-habilidades tr:nth-child(even) {
+    background-color: #1f1f1f;
+}
+
+.tabela-habilidades tr:hover {
+    background-color: #2f2f2f;
+}
+
+.cursos-medalhas {
+    display: flex;
+    gap: 20px;
+}
+
 .cursos, .medalhas {
     background-color: #2a2a2a;
     padding: 20px;
-    margin: 15px 0;
-    border: 1px solid #8A2BE2;
+    flex: 1;
+    border: 1px solid #8900f2;
 }
 
 .cursos h3, .medalhas h3 {
-    color: #8A2BE2;
+    color: #8900f2;
     margin-top: 0;
     font-size: 18px;
 }
@@ -191,44 +254,52 @@ nav a:hover {
 .cursos li, .medalhas li {
     padding: 8px 0;
     border-bottom: 1px solid #444444;
-    position: relative;
-    padding-left: 20px;
-}
-
-.cursos li:before, .medalhas li:before {
-    content: "▶";
-    color: #8A2BE2;
-    position: absolute;
-    left: 0;
+    color: #cccccc;
 }
 
 /* ----- FORMULÁRIO ----- */
+.contato {
+    width: 90%;
+    margin: 30px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border: 2px solid #8900f2;
+}
+
+.contato h2 {
+    color: #8900f2;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #6a00b8;
+    padding-bottom: 8px;
+}
+
 form {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    border: 2px solid #8A2BE2;
-    background: #1a1a1a;
+    border: 2px solid #8900f2;
+    background: #2a2a2a;
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #8A2BE2;
+    color: #8900f2;
 }
 
 input, textarea {
     width: 100%;
     padding: 8px;
     margin: 5px 0 15px;
-    border: 1px solid #8A2BE2;
-    background-color: #000000;
+    border: 1px solid #8900f2;
+    background-color: #02010a;
     color: white;
 }
 
 input[type="submit"] {
-    background-color: #8A2BE2;
+    background-color: #8900f2;
     color: white;
     border: none;
     padding: 10px;
@@ -237,7 +308,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #6A1BB5;
+    background-color: #6a00b8;
 }
 
 /* ----- RODAPÉ ----- */
@@ -247,11 +318,11 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    border-top: 4px solid #8A2BE2;
+    border-top: 4px solid #8900f2;
 }
 
 footer a {
-    color: #8A2BE2;
+    color: #8900f2;
     text-decoration: none;
 }
 
@@ -259,18 +330,39 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* ----- RESPONSIVIDADE ----- */
 @media (max-width: 768px) {
-    .principal, .card {
-        width: 95%;
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        gap: 15px;
+    }
+    
+    .sobre-container {
+        flex-direction: column;
+    }
+    
+    .sobre-imagem {
+        order: -1;
     }
     
     .foto-perfil {
-        float: none;
-        display: block;
-        margin: 0 auto 20px;
+        width: 150px;
+        height: 150px;
     }
     
-    .projetos-lista {
-        display: block;
+    .projetos-container {
+        flex-direction: column;
+    }
+    
+    .cursos-medalhas {
+        flex-direction: column;
+    }
+    
+    form {
+        width: 95%;
     }
 }
